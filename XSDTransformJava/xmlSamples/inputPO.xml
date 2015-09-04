@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<purchaseOrder  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://kiwi.org/PurchaseOrderSchema.xsd purchase.xsd"
+               xmlns="http://kiwi.org/PurchaseOrderSchema.xsd"
+orderDate="2012-12-13" confirmDate="2012-12-13">
+  <shipTo country="DE">
+    <name>Max Mustermann</name>
+    <street>Lindenstrasse</street>
+    <city>Berlin</city>
+    <state>Berlin</state>
+    <zip>1234</zip>
+  </shipTo>
+  <billTo country="DE">
+    <name>Fielmann</name>
+    <street>Adenauer</street>
+    <city>Berlin</city>
+    <state>Berlin</state>
+    <zip>45678</zip>
+  </billTo>
+  <comment>DHL</comment>
+  <items>
+    <item partNum="134str">
+      <productName>str1234</productName>
+      <quantity>90</quantity>
+      <Price>123.45</Price>
+      <comment>str1234</comment>
+      <shipDate>2015-12-13</shipDate>
+    </item>
+  </items>
+</purchaseOrder>

@@ -1,0 +1,49 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://kiwi.org/PurchaseOrderSchema.xsd" targetNamespace="http://kiwi.org/PurchaseOrderSchema.xsd"
+	elementFormDefault="qualified">
+
+	<xsd:element name="confirmation" type="tns:confirmationType" />
+
+	<xsd:complexType name="confirmationType">
+		<xsd:sequence>
+			<xsd:element name="letterBody" type="tns:letterBodyType" />
+			<xsd:element name="webMessage" type="tns:webMessageType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="webMessageType" mixed="true">
+		<xsd:sequence>
+			<xsd:element name="message">
+				<xsd:complexType mixed="true">
+					<xsd:sequence>
+						<xsd:element name="text" type="xsd:string" />
+						<xsd:element name="orderID" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			
+			
+
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="letterBodyType" mixed="true">
+		<xsd:sequence>
+			<xsd:element name="salutation">
+				<xsd:complexType mixed="true">
+					<xsd:sequence>
+						<xsd:element name="name" type="xsd:string" />
+					</xsd:sequence>
+				</xsd:complexType>
+			</xsd:element>
+			<xsd:element name="orderID" type="xsd:string" />
+			<xsd:element name="quantity" type="xsd:positiveInteger" />
+			<xsd:element name="productName" type="xsd:string" />
+			<xsd:element name="shipDate" type="xsd:date" minOccurs="0" />
+			<!-- etc. -->
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+</xsd:schema>
