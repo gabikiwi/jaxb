@@ -212,7 +212,12 @@ public class PurchaseOrderType {
     
     public String toString (){
     	
-    	return "Ship to " + "\nstreet:" + getShipTo().getStreet() + ", city: " + getShipTo().getCity() ;
+    	
+    	return "Ship to " +
+    			"\nstreet: " + getShipTo().getStreet() +
+    			",\ncity: " + getShipTo().getCity() + 
+    			"\nitems " + getItems().getItem().get(0).getProductName() + 
+    			" price: " + getItems().getItem().get(0).getPrice();
     }
 
 }

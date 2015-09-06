@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/test" 
+xmlns:tns="http://www.example.org/test" 
+elementFormDefault="qualified">
+
+
+    <complexType name="replyType">
+    	<sequence>
+    		<element name="name" type="string"></element>
+    		<element name="address" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="reply" type="tns:replyType"></element>
+</schema>

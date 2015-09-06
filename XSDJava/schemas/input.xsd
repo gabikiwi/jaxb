@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/input"
+xmlns:tns="http://www.example.org/input" elementFormDefault="qualified">
+
+
+    <complexType name="rootType">
+    	<sequence>
+    		<element name="first_name" type="string"></element>
+    		<element name="last_name" type="string"></element>
+    		<element name="address" type="string"></element>
+    	</sequence>
+    </complexType>
+    
+    <element name="root" type="tns:rootType"></element>
+</schema>
