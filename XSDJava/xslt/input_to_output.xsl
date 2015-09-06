@@ -27,7 +27,7 @@
     <reply>
       <name>
       <!-- <xsl:value-of select="concat(/tns:root/tns:first_name,' ',/tns:root/tns:last_name)"/>-->
-    		<xsl:value-of select="/root/tns:first_name"/>
+    		<xsl:value-of select="concat(/root/tns:first_name,' ',/root/last_name)"/>
       </name>
       <address>
         <xsl:value-of select="/tns:root/tns:address"/>
