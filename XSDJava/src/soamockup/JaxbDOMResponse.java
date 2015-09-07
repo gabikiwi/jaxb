@@ -20,7 +20,7 @@ import org.xml.sax.SAXException;
 
 public class JaxbDOMResponse {
 
-	 static Document document;
+	static Document document;
 
 	public static void main(String[] args) {
 		
