@@ -25,7 +25,7 @@ public class JaxbDOMResponse {
 	public static void main(String[] args) {
 		
 		try {
-		File file = new File("./schemas/input.xml");
+		File file = new File("./schemas/input1.xml");
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
 		document = builder.parse(file);

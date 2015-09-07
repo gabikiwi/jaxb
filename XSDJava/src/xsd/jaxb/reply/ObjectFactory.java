@@ -31,7 +31,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Reply_QNAME = new QName("http://www.example.org/test", "reply");
+    private final static QName _Reply_QNAME = new QName("http://www.example.org/input", "reply");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: xsd.jaxb.reply
@@ -52,7 +52,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link ReplyType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.example.org/test", name = "reply")
+    @XmlElementDecl(namespace = "http://www.example.org/input", name = "reply")
     public JAXBElement<ReplyType> createReply(ReplyType value) {
         return new JAXBElement<ReplyType>(_Reply_QNAME, ReplyType.class, null, value);
     }

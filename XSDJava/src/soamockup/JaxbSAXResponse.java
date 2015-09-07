@@ -26,7 +26,7 @@ public class JaxbSAXResponse {
 			
 			String parserClass = "org.apache.crimson.parser.XMLReaderImpl";			
 			XMLReader reader = XMLReaderFactory.createXMLReader(parserClass);
-			SAXSource source = new SAXSource(reader, new InputSource("./schemas/input.xml"));
+			SAXSource source = new SAXSource(reader, new InputSource("./schemas/input1.xml"));
 			
 			
 			File transformFile = new File("./xslt/input_to_output.xsl");

@@ -31,7 +31,7 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Root_QNAME = new QName("http://www.example.org/test", "root");
+    private final static QName _Root_QNAME = new QName("http://www.example.org/input", "root");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: test
@@ -52,7 +52,7 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link RootType }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://www.example.org/test", name = "root")
+    @XmlElementDecl(namespace = "http://www.example.org/input", name = "root")
     public JAXBElement<RootType> createRoot(RootType value) {
         return new JAXBElement<RootType>(_Root_QNAME, RootType.class, null, value);
     }

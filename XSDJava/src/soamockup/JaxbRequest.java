@@ -16,7 +16,7 @@ public class JaxbRequest{
 
 		try {
 			
-			File file = new File("./schemas/test.xml");
+			File file = new File("./schemas/input1.xml");
 			JAXBContext jaxbContext = JAXBContext.newInstance(RootType.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 			RootType rt = (RootType) jaxbUnmarshaller.unmarshal(file);

@@ -15,7 +15,7 @@ public class JaxbResponse {
 	public static void main(String[] args) {
 
 		try {
-			File file = new File("./schemas/test.xml");
+			File file = new File("./schemas/input1.xml");
 			JAXBContext jaxbContext;
 
 			jaxbContext = JAXBContext.newInstance(RootType.class);

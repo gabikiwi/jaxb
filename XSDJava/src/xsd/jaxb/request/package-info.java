@@ -5,5 +5,5 @@
 // Generated on: 2015.09.03 at 10:08:09 PM EEST 
 //
 
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.example.org/test", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://www.example.org/input", elementFormDefault = javax.xml.bind.annotation.XmlNsForm.QUALIFIED)
 package xsd.jaxb.request;

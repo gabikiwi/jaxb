@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<reply xmlns="http://www.example.org/test">
+<reply xmlns="http://www.example.org/input">
     <name>Andrei Spiridon</name>
     <address>Bucharest</address>
 </reply>
