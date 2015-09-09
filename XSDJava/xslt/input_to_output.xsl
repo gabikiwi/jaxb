@@ -21,17 +21,18 @@
                 xmlns:ora="http://schemas.oracle.com/xpath/extension"
                 xmlns:socket="http://www.oracle.com/XSL/Transform/java/oracle.tip.adapter.socket.ProtocolTranslator"
                 xmlns:tns="http://www.example.org/input"
+                xmlns:output="http://www.example.org/test"
                 xmlns:ldap="http://schemas.oracle.com/xpath/extension/ldap"
                 exclude-result-prefixes="xsi xsl xsd tns ns0 xp20 bpws aia mhdr bpel oraext dvm hwf med ids bpm xdk xref bpmn ora socket ldap">
   <xsl:template match="/">
-    <reply>
-      <name>
-      <!-- <xsl:value-of select="concat(/tns:root/tns:first_name,' ',/tns:root/tns:last_name)"/>-->
-    		<xsl:value-of select="concat(/root/tns:first_name,' ',/root/last_name)"/>
-      </name>
-      <address>
+    <output:reply>
+      <output:name>
+      <xsl:value-of select="concat(/tns:root/tns:first_name,' ',/tns:root/tns:last_name)"/>
+    		 <!--<xsl:value-of select="concat(/root/first_name,' ',/root/last_name)"/> -->
+      </output:name>
+      <output:address>
         <xsl:value-of select="/tns:root/tns:address"/>
-      </address>
-    </reply>
+      </output:address>
+    </output:reply>
   </xsl:template>
 </xsl:stylesheet>

@@ -3,6 +3,22 @@
   <groupId>XSDJava</groupId>
   <artifactId>XSDJava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ 
+ <dependencies> 
+  <dependency>
+	<groupId>crimson</groupId>
+	<artifactId>crimson</artifactId>
+	<version>1.1.3</version>
+</dependency>
+
+<dependency>
+	<groupId>com.sun.jersey</groupId>
+	<artifactId>jersey-bundle</artifactId>
+	<version>1.18</version>
+</dependency>
+
+</dependencies>
+  
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
